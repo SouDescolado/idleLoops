@@ -107,6 +107,7 @@ function restart() {
         console.warn('teste3');
         addGold(99999999);
         addReputation(99999999);
+        addOffline(-totalOfflineMs);
         addOffline(99999999);
         addMana(99999999);
     } else if(initialGold) { //debugging only
@@ -411,7 +412,7 @@ function toggleOffline() {
         bonusSpeed = 4;
         document.getElementById('isBonusOn').innerHTML = _txt("time_controls>bonus_seconds>state>on");
     } else if(bonusSpeed === 4) { //go faster
-        bonusSpeed = 40;
+        bonusSpeed = 100;
         document.getElementById('isBonusOn').innerHTML = _txt("time_controls>bonus_seconds>state>super");
     } else { //take it slow
         bonusSpeed = 1;
