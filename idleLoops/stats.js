@@ -89,12 +89,19 @@ function getPrcToNextSkillLevel(skill) {
 
 function addSkillExp(name, amount) {
     skills[name].exp += amount;
+    if(document.getElementById("cheats").checked) {
+        skills[name].exp += amount * 100;
+    }
     view.updateSkill(name);
 }
 
 function addExp(name, amount) {
     stats[name].exp += amount;
     stats[name].talent += amount / 100;
+    if(document.getElementById("cheats").checked) {
+        stats[name].exp += amount * 100;
+        stats[name].talent += amount;
+    }
 }
 
 function restartStats() {
