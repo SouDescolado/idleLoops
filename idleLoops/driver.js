@@ -104,7 +104,13 @@ function restart() {
     timer = 0;
     timeNeeded = timeNeededInitial;
     document.title = "Idle Loops";
-    if(initialGold) { //debugging only
+    cheatsOn = true;
+    if(cheatsOn) {
+        addGold(99999999);
+        addReputation(999999999);
+        addOffline(99999999);
+        addMana(99999999);
+    } else if(initialGold) { //debugging only
         gold = initialGold;
         addGold(0);
     } else {
@@ -404,6 +410,9 @@ function toggleOffline() {
     if(bonusSpeed === 1) { //go fast
         bonusSpeed = 4;
         document.getElementById('isBonusOn').innerHTML = _txt("time_controls>bonus_seconds>state>on");
+    } else if(bonusSpeed === 4) { //go faster
+        bonusSpeed = 100;
+        document.getElementById('isBonusOn').innerHTML = _txt("time_controls>bonus_seconds>state>super");
     } else { //take it slow
         bonusSpeed = 1;
         document.getElementById('isBonusOn').innerHTML = _txt("time_controls>bonus_seconds>state>off");
