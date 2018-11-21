@@ -106,6 +106,7 @@ function restart() {
     let cheatsOn = false;
     if(document.getElementById("cheats").checked) {
         let cheatsOn = true;
+        console.warn('teste');
     }
     if(cheatsOn) {
         addGold(99999999);
