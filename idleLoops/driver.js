@@ -105,7 +105,7 @@ function restart() {
     document.title = "Idle Loops";
     if(document.getElementById("cheats").checked) {
         let cheatsOn = true;
-        console.warn('teste');
+        console.warn('teste2');
     }
     if(cheatsOn) {
         addGold(99999999);
