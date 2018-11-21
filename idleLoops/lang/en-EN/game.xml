@@ -214,6 +214,7 @@
         <play_button>Play</play_button>
         <pause_button>Pause</pause_button>
         <pause_before_restart>Pause before restart</pause_before_restart>
+        <cheats>Cheats</cheats>
         <restart_button>Restart</restart_button>
         <restart_text>Resets the loop. Not a hard reset.</restart_text>
         <story_title>Story</story_title>
