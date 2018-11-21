@@ -1,7 +1,6 @@
 'use strict';
 
 let gameSpeed = 1;
-let cheatsOn = true;
 let curTime = new Date();
 let gameTicksLeft = 0;
 let radarUpdateTime = 0;
@@ -104,6 +103,7 @@ function restart() {
     timer = 0;
     timeNeeded = timeNeededInitial;
     document.title = "Idle Loops";
+    let cheatsOn = true;
     if(cheatsOn) {
         addGold(99999999);
         addReputation(999999999);
