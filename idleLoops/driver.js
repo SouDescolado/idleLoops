@@ -411,7 +411,7 @@ function toggleOffline() {
         bonusSpeed = 4;
         document.getElementById('isBonusOn').innerHTML = _txt("time_controls>bonus_seconds>state>on");
     } else if(bonusSpeed === 4) { //go faster
-        bonusSpeed = 100;
+        bonusSpeed = 40;
         document.getElementById('isBonusOn').innerHTML = _txt("time_controls>bonus_seconds>state>super");
     } else { //take it slow
         bonusSpeed = 1;
