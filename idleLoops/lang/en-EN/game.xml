@@ -256,6 +256,7 @@
             <state>
                 <on>ON</on>
                 <off>OFF</off>
+                <super>SUPER</super>
             </state>
             <counter_text>Total Bonus Seconds</counter_text>
         </bonus_seconds>
