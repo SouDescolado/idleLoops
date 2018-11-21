@@ -103,7 +103,9 @@ function restart() {
     timer = 0;
     timeNeeded = timeNeededInitial;
     document.title = "Idle Loops";
-    let cheatsOn = true;
+    if(document.getElementById("cheats").checked) {
+        let cheatsOn = true;
+    }
     if(cheatsOn) {
         addGold(99999999);
         addReputation(999999999);
