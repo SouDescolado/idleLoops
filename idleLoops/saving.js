@@ -16,6 +16,7 @@ let mainTickLoop;
 let isFileSystem = !!location.href.match("file");
 let isBeta = !!location.href.match(/beta/i);
 let saveName = !isBeta ? "idleLoops1" :  "idleLoopsBeta";
+let cheatsOn = false;
 
 let timeNeededInitial = 5 * 50;
 let timer = timeNeededInitial;
