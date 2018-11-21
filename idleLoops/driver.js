@@ -104,22 +104,20 @@ function restart() {
     timeNeeded = timeNeededInitial;
     document.title = "Idle Loops";
     if(document.getElementById("cheats").checked) {
-        let cheatsOn = true;
-        console.warn('teste2');
-    }
-    if(cheatsOn) {
+        console.warn('teste3');
         addGold(99999999);
-        addReputation(999999999);
+        addReputation(99999999);
         addOffline(99999999);
         addMana(99999999);
     } else if(initialGold) { //debugging only
         gold = initialGold;
         addGold(0);
+        addReputation(-reputation);
     } else {
         addGold(-gold);
+        addReputation(-reputation);
     }
     addGlasses(-glasses);
-    addReputation(-reputation);
     addSupplies(-supplies);
     addHerbs(-herbs);
     addHide(-hide);
