@@ -103,6 +103,7 @@ function restart() {
     timer = 0;
     timeNeeded = timeNeededInitial;
     document.title = "Idle Loops";
+    let cheatsOn = false;
     if(document.getElementById("cheats").checked) {
         let cheatsOn = true;
     }
