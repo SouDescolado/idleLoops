@@ -8,6 +8,7 @@ Views.registerView('timeControls',{
 
       // checkbox pause on restart
       html += "<div class='control'><input type='checkbox' id='pauseBeforeRestart'><label for='pauseBeforeRestart'>"+_txt('time_controls>pause_before_restart')+"</label></div>";
+      html += "<div class='control'><input type='checkbox' id='cheats'><label for='cheats'>"+_txt('time_controls>cheats')+"</label></div>";
 
       // restart button and its hover
       html += "<div onclick='restart()' class='button showthat control'>"+_txt('time_controls>restart_button');
